@@ -1,10 +1,8 @@
-package reqres;
+package reqres.manual;
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.*;
-import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
-import io.restassured.http.ContentType;
 
 
 public class delete_user_test {
