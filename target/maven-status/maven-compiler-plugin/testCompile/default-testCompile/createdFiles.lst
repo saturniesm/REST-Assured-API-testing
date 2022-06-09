@@ -1,1 +1,4 @@
+reqres\post_user_test.class
 com\example\AppTest.class
+reqres\get_list_user_test.class
+reqres\put_user_test.class
