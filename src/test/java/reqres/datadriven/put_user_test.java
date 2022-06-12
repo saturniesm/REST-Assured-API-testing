@@ -4,15 +4,24 @@ package reqres.datadriven;
 import org.json.simple.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import groovyjarjarantlr4.v4.runtime.misc.ObjectEqualityComparator;
-
 import static io.restassured.RestAssured.*;
+
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
 
 
 
 public class put_user_test {
+
+    static RequestSpecification getCommonSpec(){
+        // TODO understand this
+        RequestSpecBuilder builder = new RequestSpecBuilder();
+        builder.setBaseUri ("https://reqres.in/");
+        builder.setBasePath("/api/users");
+        RequestSpecification requestSpec = builder.build();
+        return requestSpec;
+    }
 
 
     @DataProvider(name = "dataPut")
@@ -46,8 +55,7 @@ public class put_user_test {
             .header("Content-Type", "application/json")
             .body(req.toJSONString())
         .when()
-            // TODO store the base variable in global
-            .post("https://reqres.in/api/users")
+            .put("https://reqres.in/api/users")
         .then()
             .statusCode(201)
             .log().all();

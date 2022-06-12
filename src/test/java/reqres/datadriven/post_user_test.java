@@ -6,11 +6,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 
+import static io.restassured.RestAssured.basePath;
+import static io.restassured.RestAssured.baseURI;
 
 
 public class post_user_test {
-
 
     @DataProvider(name = "dataPost")
     public Object [][] data() {
@@ -30,6 +32,11 @@ public class post_user_test {
 
     @Test(dataProvider = "dataPost")
     public void test(String foodName, String cookType){
+
+
+        baseURI = "https://reqres.in/api";
+        basePath = "/users";
+
         JSONObject req = new JSONObject();
         
         req.put("foodName", foodName);
@@ -41,8 +48,7 @@ public class post_user_test {
             .header("Content-Type", "application/json")
             .body(req.toJSONString())
         .when()
-            // TODO store the base variable in global
-            .post("https://reqres.in/api/users")
+            .post(baseURI+basePath)
         .then()
             .statusCode(201)
             .log().all();

@@ -1,4 +1,10 @@
-reqres\post_user_test.class
+reqres\manual\put_user_test.class
+reqres\datadriven\download_uploud_test.class
+reqres\manual\get_list_user_test.class
+reqres\datadriven\auth_user_test.class
+reqres\datadriven\post_user_test.class
+reqres\manual\delete_user_test.class
+reqres\manual\post_user_test.class
 com\example\AppTest.class
-reqres\get_list_user_test.class
-reqres\put_user_test.class
+reqres\datadriven\delete_user_test.class
+reqres\datadriven\put_user_test.class

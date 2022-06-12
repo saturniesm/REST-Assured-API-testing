@@ -1,4 +1,10 @@
-D:\prakerin\api-testing\testing\src\test\java\reqres\post_user_test.java
-D:\prakerin\api-testing\testing\src\test\java\com\example\AppTest.java
-D:\prakerin\api-testing\testing\src\test\java\reqres\get_list_user_test.java
-D:\prakerin\api-testing\testing\src\test\java\reqres\put_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\datadriven\auth_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\manual\get_list_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\manual\delete_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\datadriven\put_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\datadriven\post_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\com\example\AppTest.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\datadriven\delete_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\manual\put_user_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\datadriven\download_uploud_test.java
+d:\prakerin\api-testing\testing\src\test\java\reqres\manual\post_user_test.java
